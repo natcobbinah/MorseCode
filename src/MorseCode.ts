@@ -1,5 +1,7 @@
 export class MorseCodeGenerator {
 
+  //used [method chaining] to implement add morseCodeStrings
+
   morseCodes = new Map();
   outputResult: string = "";
   userEntered_MorseCodeArray: Array<string> = [];

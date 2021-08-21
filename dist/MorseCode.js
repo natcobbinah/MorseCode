@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MorseCodeGenerator = void 0;
 class MorseCodeGenerator {
     constructor() {
+        //used [method chaining] to implement add morseCodeStrings
         this.morseCodes = new Map();
         this.outputResult = "";
         this.userEntered_MorseCodeArray = [];
