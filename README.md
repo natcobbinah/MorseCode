@@ -14,7 +14,7 @@ and **vice versa** for learning and other purposes which can only be defined by 
 
 ## Using classes in the package
 ###### Javascript
-    let morseCode = require("morseCode");
+    let morseCode = require("morse-code-generator");
     let results = new morseCode.MorseCodeGenerator();
     
     //encoding a string of words or sentences to morseCode
@@ -41,7 +41,7 @@ and **vice versa** for learning and other purposes which can only be defined by 
       h  e  l  l  o    w  o  r  l  d 
 
 ###### TypeScript
-    import {MorseCodeGenerator} from "morseCode";
+    import {MorseCodeGenerator} from "morse-code-generator";
     const results = new MorseCodeGenerator();
 
     //encoding a string of words or sentences to morseCode
