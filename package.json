@@ -1,6 +1,6 @@
 {
   "name": "morse-code-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This project therefore aims to simplify encoding and decoding of morseCode to human readable format and vice versa for learning and other purposes which can only be defined by the user",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,5 +21,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "typedoc": "^0.21.6"
   }
 }

@@ -65,11 +65,17 @@ export class MorseCodeGenerator {
       .set("Ö", "_ _ _.");
   }
 
+  /**
+   * @returns String output after encoded or decoded operation
+   */
   output() {
     return console.log(this.outputResult);
   }
 
-  //Pass a sentence or word as an argument to the fxn and have it converted into morseCode
+  /**
+   * @param message Pass a sentence or word as an argument to the fxn (encode_toMorseCode) and have it converted into morseCode 
+   * @returns morseCode translation equivalent as a string
+   */
   encode_toMorseCode(message:string) {
     let morseCodeTranslation:Array<string> = [];
     let sentence = message.split("");
@@ -88,20 +94,29 @@ export class MorseCodeGenerator {
     return this;
   }
 
-  //add morseCodeString
+  /**
+   * @param morseCodeExpression method which supports chaining to add a new morseCode to be decoded
+   * to human readable output
+   * @returns A string  added to an array comprising of morse codes to be decoded
+   */
   addMorseCode(morseCodeExpression:string) {
     this.userEntered_MorseCodeArray.push(morseCodeExpression);
     return this;
   }
 
-  //add Space Character to format MorseCode String
+  /**
+   * @returns an empty string, added to an array comprising of morse codes to be decoded,
+   * adding formattings to the morseCodes
+   */
   space() {
     this.userEntered_MorseCodeArray.push("");
     this.userEntered_MorseCodeArray.push("");
     return this;
   }
 
-  //Pass morseCode as an argument string to the fxn and have it converted to human readable format.
+  /** 
+   * @returns Human Readable Format of user entered morseCode expression
+   */
   decode_toHumanReadable() {
     let humanReadableTranslation:Array<string> = [];
     let spaceChar = "";
