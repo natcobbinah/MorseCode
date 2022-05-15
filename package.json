@@ -1,6 +1,6 @@
 {
   "name": "morse-code-generator",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "This project therefore aims to simplify encoding and decoding of morseCode to human readable format and vice versa for learning and other purposes which can only be defined by the user",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,13 +12,20 @@
     "build": "tsc",
     "prepare": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natcobbinah/MorseCode.git"
+  },
   "keywords": [
     "morsecode",
     "morse",
     "code translation"
   ],
-  "author": "Nathhaniel Cobbinah",
+  "author": "Nathaniel Cobbinah",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natcobbinah/MorseCode/issues"
+  },
   "devDependencies": {
     "typescript": "^4.3.5"
   },

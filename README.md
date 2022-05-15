@@ -12,6 +12,29 @@ coded sequence of dots and dashes.
 This project therefore aims to simplify **encoding** and **decoding** of morseCode to **human readable format**
 and **vice versa** for learning and other purposes which can only be defined by the user
 
+## Methods
+| Function                                   |                                            Defintion                                            |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| addMorseCode(**morseCodeExpression : string**) | [**@param morseCodeExpression**] method  supports chaining to add a new morseCode to be decoded to  human readable output
+|                                            | [**@returns**] A string  added to an array comprising of morse codes to be decoded                  |
+| space()                                    | [**@returns**] an empty string, added to an array comprising of morse codes to be decoded,      adding formatting to the morseCodes  to be output to  console
+| decode_toHumanReadable()                   | [**@returns**] Human Readable Format of user entered morseCode expression                           |
+| encode_toMorseCode(**message : string**)       | [**@param message**] Pass a sentence or word as an argument to the fxn (encode_toMorseCode) and have it converted into morseCode 
+|                                            | [**@returns**] morseCode translation equivalent as a string                            |             
+| output()                                   | [**@returns**] String output after encoded or decoded operation to the console                      |
+
+ 
+### Pipe Operations
+> On Encoding
+      ```
+       morseCodeGeneratorInstance > encode_toMorseCode(argx) > output()
+      ```
+
+> On Decoding
+      ```
+       morseCodeGeneratorInstance > addMorseCode(argx) > space(){optional if not needed} > decode_toHumanReade() > output()
+      ```
+
 ## Using classes in the package
 ###### Javascript
     let morseCode = require("morse-code-generator");

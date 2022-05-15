@@ -1,5 +1,5 @@
 export declare class MorseCodeGenerator {
-    morseCodes: Map<any, any>;
+    morseCodes: Map<string, string>;
     outputResult: string;
     userEntered_MorseCodeArray: Array<string>;
     constructor();

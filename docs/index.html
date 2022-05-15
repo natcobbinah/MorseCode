@@ -72,6 +72,56 @@
 				coded sequence of dots and dashes.</p>
 				<p>This project therefore aims to simplify <strong>encoding</strong> and <strong>decoding</strong> of morseCode to <strong>human readable format</strong>
 				and <strong>vice versa</strong> for learning and other purposes which can only be defined by the user</p>
+				<a href="#methods" id="methods" style="color: inherit; text-decoration: none;">
+					<h2>Methods</h2>
+				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>Function</th>
+							<th>Defintion</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>addMorseCode(<strong>morseCodeExpression : string</strong>)</td>
+							<td>[<strong>@param morseCodeExpression</strong>] method  supports chaining to add a new morseCode to be decoded to  human readable output</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>[<strong>@returns</strong>] A string  added to an array comprising of morse codes to be decoded</td>
+						</tr>
+						<tr>
+							<td>space()</td>
+							<td>[<strong>@returns</strong>] an empty string, added to an array comprising of morse codes to be decoded,      adding formatting to the morseCodes  to be output to  console</td>
+						</tr>
+						<tr>
+							<td>decode_toHumanReadable()</td>
+							<td>[<strong>@returns</strong>] Human Readable Format of user entered morseCode expression</td>
+						</tr>
+						<tr>
+							<td>encode_toMorseCode(<strong>message : string</strong>)</td>
+							<td>[<strong>@param message</strong>] Pass a sentence or word as an argument to the fxn (encode_toMorseCode) and have it converted into morseCode</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>[<strong>@returns</strong>] morseCode translation equivalent as a string</td>
+						</tr>
+						<tr>
+							<td>output()</td>
+							<td>[<strong>@returns</strong>] String output after encoded or decoded operation to the console</td>
+						</tr>
+				</tbody></table>
+				<a href="#pipe-operations" id="pipe-operations" style="color: inherit; text-decoration: none;">
+					<h3>Pipe Operations</h3>
+				</a>
+				<blockquote>
+					<p>On Encoding
+					<code>       morseCodeGeneratorInstance &gt; encode_toMorseCode(argx) &gt; output()      </code></p>
+				</blockquote>
+				<blockquote>
+					<p>On Decoding
+					<code>       morseCodeGeneratorInstance &gt; addMorseCode(argx) &gt; space(){optional if not needed} &gt; decode_toHumanReade() &gt; output()      </code></p>
+				</blockquote>
 				<a href="#using-classes-in-the-package" id="using-classes-in-the-package" style="color: inherit; text-decoration: none;">
 					<h2>Using classes in the package</h2>
 				</a>
